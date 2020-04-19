@@ -11,6 +11,12 @@ and self('action, 'state) = {
   state: 'state,
 };
 
+let noUpdate: update('a, 'b);
+let update: 'a => update('b, 'a);
+let updateWithSideEffects:
+  ('a, self('b, 'a) => option(unit => unit)) => update('b, 'a);
+let sideEffects: (self('a, 'b) => option(unit => unit)) => update('a, 'b);
+
 let useReducer:
   ('state, ('action, 'state) => update('action, 'state)) =>
   ('state, 'action => unit);
