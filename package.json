@@ -1,6 +1,7 @@
 {
   "name": "reason-react-update",
   "version": "1.0.0",
+  "main": "./src/ReactUpdate.bs.js",
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
