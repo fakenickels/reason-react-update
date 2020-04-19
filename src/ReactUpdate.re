@@ -17,6 +17,18 @@ and fullState('action, 'state) = {
   sideEffects: ref(array(self('action, 'state) => option(unit => unit))),
 };
 
+let noUpdate = NoUpdate;
+let update = state => {
+  Update(state);
+};
+let updateWithSideEffects = (state, cb) => {
+  UpdateWithSideEffects(state, cb);
+};
+
+let sideEffects = cb => {
+  SideEffects(cb);
+};
+
 let useReducer = (initialState, reducer) => {
   let ({state, sideEffects}, send) =
     React.useReducer(

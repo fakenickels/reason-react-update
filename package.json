@@ -18,14 +18,14 @@
   "author": "bloodyowl <bloodyowl@icloud.com>",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "reason-react": ">=0.7.0"
   },
   "devDependencies": {
-    "bs-platform": "^5.0.3",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "bs-platform": "^7.2.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "reason-react": ">=0.7.0"
   }
 }
