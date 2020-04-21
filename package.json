@@ -1,5 +1,5 @@
 {
-  "name": "reason-react-update",
+  "name": "@fakenickels/reason-react-update",
   "version": "1.0.0",
   "main": "./src/ReactUpdate.bs.js",
   "scripts": {
